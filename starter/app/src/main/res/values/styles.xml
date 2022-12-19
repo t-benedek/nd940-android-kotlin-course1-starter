@@ -16,4 +16,19 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- Button Styles -->
+    <style name="Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/ok_green_color</item>
+        <item name="colorControlHighlight">@color/selected_green_color</item>
+        <item name="android:textColor">@color/white_text_color</item>
+        <item name="colorAccent">@color/selected_green_color</item>
+    </style>
+
+
+    <style name="InfoLabel" parent="Widget.AppCompat.TextView">
+        <item name="colorControlNormal">@color/ok_green_color</item>
+        <item name="android:textColor">@color/ok_green_color</item>
+        <item name="colorAccent">@color/selected_green_color</item>
+    </style>
+
 </resources>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_button">Login</string>
+    <string name="create_button">Create</string>
+    <string name="email_text">Your eMail</string>
+    <string name="email_text_info">eMail:</string>
+    <string name="password">Password</string>
+    <string name="yourPwd">Your Password</string>
+    <string name="welcome_1">Welcome to Gabor</string>
+    <string name="welcome_2">The Premium Shoe Store</string>
+    <string name="button_instructions">Go to Instructions</string>
 </resources>
