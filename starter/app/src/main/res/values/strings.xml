@@ -11,4 +11,8 @@
     <string name="welcome_1">Welcome to Gabor</string>
     <string name="welcome_2">The Premium Shoe Store</string>
     <string name="button_instructions">Go to Instructions</string>
+    <string name="instruction_label1">You can add new Shoes on the next page</string>
+    <string name="instruction_label2">You can also show the details of the shoes</string>
+    <string name="button_toShoes">Bring me to the shoes</string>
+    <string name="Logout" />
 </resources>
