@@ -15,4 +15,6 @@
     <string name="instruction_label2">You can also show the details of the shoes</string>
     <string name="button_toShoes">Bring me to the shoes</string>
     <string name="Logout" />
+    <string name="button_save">save</string>
+    <string name="cancel_button">Cancel</string>
 </resources>

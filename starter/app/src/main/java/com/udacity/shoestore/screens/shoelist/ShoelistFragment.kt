@@ -39,6 +39,10 @@ class ShoelistFragment : Fragment() {
             Navigation.createNavigateOnClickListener(R.id.action_shoelistFragment_to_loginFragment)
         )
 
+        binding.buttonShoeDetails.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_shoelistFragment_to_shoeDetalsFragment)
+        )
+
         return binding.root
     }
 
