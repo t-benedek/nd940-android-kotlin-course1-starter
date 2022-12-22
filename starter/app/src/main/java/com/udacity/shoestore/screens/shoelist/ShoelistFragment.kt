@@ -38,7 +38,7 @@ class ShoelistFragment : Fragment() {
         shoeListBinding.buttonShoeDetails.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_shoelistFragment_to_shoeDetalsFragment)
         )
-        
+
         viewModel.shoeListLive.observe(viewLifecycleOwner, androidx.lifecycle.Observer { shoeList ->
             for (shoe in shoeList) {
                 Log.i("ShowListFragment", "ViewModel Observer called")

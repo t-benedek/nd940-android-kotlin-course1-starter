@@ -42,10 +42,11 @@ class ShoeDetailsFragment : Fragment() {
 
         binding.buttonSave.setOnClickListener(object : View.OnClickListener {
             override fun onClick(view: View?) {
-                val name:String = binding.shoeNameEdit.toString()
-                val size:String = binding.shoeSizeEdit.toString()
-                val company:String = binding.shoeCompanyEdit.toString()
-                val desc:String = binding.shoeDescEdit.toString()
+                val name:String = binding.shoeNameEdit.text.toString()
+                Log.i("ShoeDetails", "Adding Shoe with name " + name)
+                val size:String = binding.shoeSizeEdit.text.toString()
+                val company:String = binding.shoeCompanyEdit.text.toString()
+                val desc:String = binding.shoeDescEdit.text.toString()
                 val shoe:Shoe = Shoe(name, size, company, desc)
                 viewModel.addShoe(shoe)
 
