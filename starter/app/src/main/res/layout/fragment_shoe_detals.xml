@@ -3,6 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.screens.shoelist.Shoe"
+        />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,7 +46,8 @@
             android:id="@+id/shoe_name_edit"
             android:layout_width="182dp"
             android:layout_height="wrap_content"
-            android:text="Name edit"
+            android:hint="edit shoe name"
+            android:text="@{shoe.name}"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/shoe_size_edit"
             app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +72,8 @@
             android:id="@+id/shoe_size_edit"
             android:layout_width="182dp"
             android:layout_height="wrap_content"
-            android:text="Size edit"
+            android:hint="edit size"
+            android:text="@{shoe.size}"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/shoe_company_edit"
             app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +98,8 @@
             android:id="@+id/shoe_company_edit"
             android:layout_width="182dp"
             android:layout_height="wrap_content"
-            android:text="Company Edit"
+            android:hint="edit company"
+            android:text="@{shoe.company}"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/shoe_desc_edit"
             app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +111,8 @@
             android:id="@+id/shoe_desc_edit"
             android:layout_width="182dp"
             android:layout_height="wrap_content"
-            android:text="Desc edit"
+            android:hint="edit desc"
+            android:text="@{shoe.desc}"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/button_cancel"
             app:layout_constraintEnd_toEndOf="parent"
@@ -119,6 +130,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button_cancel"
             app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
