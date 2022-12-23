@@ -30,7 +30,7 @@ class ShoelistFragment : Fragment() {
         val shoeListBinding: FragmentShoelistBinding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_shoelist, container, false
         )
-        
+
         shoeListBinding.buttonLogout.setOnClickListener (
             Navigation.createNavigateOnClickListener(R.id.action_shoelistFragment_to_loginFragment)
         )

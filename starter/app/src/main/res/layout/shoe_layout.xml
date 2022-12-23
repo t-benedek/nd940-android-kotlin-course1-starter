@@ -17,30 +17,38 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/shoe_name_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@{shoe.name}" />
+                android:text="@{shoe.name}"
+                android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/shoe_company_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@{shoe.company}" />
+                android:text="@{shoe.company}"
+                android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/shoe_description_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@{shoe.desc}" />
+                android:text="@{shoe.desc}"
+                android:textSize="20sp" />
+
             <TextView
                 android:id="@+id/shoe_size_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@{shoe.size}" />
+                android:text="@{shoe.size}"
+                android:textSize="20sp" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
