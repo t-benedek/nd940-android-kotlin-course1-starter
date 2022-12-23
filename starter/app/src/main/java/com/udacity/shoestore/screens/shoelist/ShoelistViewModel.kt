@@ -18,9 +18,11 @@ class ShoelistViewModel: ViewModel() {
     }
 
     fun addShoe(shoe: Shoe){
-        mShoeList.add(shoe)
-        _shoeList.value = mShoeList
-        Log.i("ShoeListViewModel", "Shoe added " + shoe.name)
+        for (i in 1..25) {
+            mShoeList.add(shoe)
+            _shoeList.value = mShoeList
+            Log.i("ShoeListViewModel", "Shoe added " + shoe.name)
+        }
     }
 }
 
