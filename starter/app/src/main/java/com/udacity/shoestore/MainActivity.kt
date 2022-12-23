@@ -33,6 +33,5 @@ class MainActivity : AppCompatActivity(), LifecycleObserver  {
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
 
         viewModel = ViewModelProvider(this).get(ShoelistViewModel::class.java)
-        // val viewModel: DiceRollViewModel by viewModels()
     }
 }
