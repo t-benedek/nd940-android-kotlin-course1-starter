@@ -10,9 +10,9 @@
             />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <!--
+        Using Linear Layout for horizontal arrangement of TextViews
+    -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -50,6 +50,5 @@
                 android:text="@{shoe.size}"
                 android:textSize="20sp" />
         </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

@@ -10,6 +10,11 @@
         />
     </data>
 
+    <!--
+        Using Constraint Layout because of complex arrangement of TextViews and EditText side by side
+        Using Horizontal chaining for TextView / EditView pairs and also for the buttons t the bottom
+        to be able to spread them to the width of the avaiable space
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

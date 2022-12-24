@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-
+    <!--
+        Using Constraint Layout to position the ScrollView on top of the fragment screen with some margin on top
+    -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -14,11 +16,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="64dp"
             android:layout_marginBottom="4dp"
-            app:layout_constraintBottom_toTopOf="@+id/button_logout"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed"
             tools:layout_editor_absoluteX="0dp">
 
+            <!--
+                Using Linear Layout to position the two buttons in the screen and
+                especially to be able to add shoe entries vertically to the fragment
+            -->
             <LinearLayout
                 android:id="@+id/layout_shoelist"
                 android:layout_width="match_parent"
@@ -32,7 +37,9 @@
                     android:layout_gravity="end|bottom"
                     android:layout_margin="16dp"
                     android:clickable="true"
-                    app:srcCompat="@drawable/ic_add" />
+                    android:focusable="true"
+                    app:srcCompat="@drawable/ic_add"
+                    android:contentDescription="@string/add_new_shoe_to_the_list" />
 
                 <Button
                     android:id="@+id/button_logout"
@@ -40,14 +47,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="Logout"
+                    android:text="@string/button_logout"
                     app:layout_constraintBottom_toTopOf="@+id/scrollView2"
                     app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
             </LinearLayout>
         </ScrollView>
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -17,4 +17,6 @@
     <string name="Logout" />
     <string name="button_save">save</string>
     <string name="cancel_button">Cancel</string>
+    <string name="add_new_shoe_to_the_list">Add new shoe to the list</string>
+    <string name="button_logout">Logout</string>
 </resources>
